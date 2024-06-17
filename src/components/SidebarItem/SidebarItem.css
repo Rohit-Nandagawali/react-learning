@@ -1,0 +1,11 @@
+.sidebar-item {
+    display: flex;
+    padding: .6rem;
+    gap: 1rem;
+    border-radius: .6rem;
+    margin: 0.4rem 0;
+}
+
+.sidebar-item:hover {
+    background-color: #202020;
+}

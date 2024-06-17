@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    color: white;
+}
+
+body {
+    background-color: #000000;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1.5fr;
+}
+
+.sidebar {
+    height: 100vh;
+    border-right: 1px solid #202020;
+    padding: 10px;
+}
+
+.logo {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.post-section {
+    height: 50px;
+}
+
+.suggestion {
+    height: 50px;
+    background-color: blue;
+}
+
+
+.profile {
+    border-radius: 50%;
+}
+
+.story-section {
+    display: flex;
+    gap: .5rem;
+    padding: 2rem;
+}

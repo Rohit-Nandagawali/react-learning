@@ -1,42 +1,65 @@
 
-
 import React from 'react'
-
-
-// this is card component
-function Card() {
-  return (
-    <div style={{ border: "solid black 2px", padding: "10px", margin: "10px", borderRadius: "20px" }}>
-      <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=100&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile"
-
-        style={{ borderRadius: '50%' }}
-
-      />
-
-      {/* bharat-shinde : bharatShinde
-          background-image: backgroundImage
-          background-size: backgroundSize
-          added new code
-       */}
-      <h1 style={{ color: '#010101', fontSize: '20px', marginTop: 0, marginBottom: "0px" }}>@rohit</h1>
-
-      <p style={{ marginTop: "0px" }}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, quam!</p>
-
-      <div style={{ backgroundColor: 'blue', color: 'white', padding: "10px", borderRadius: '10px', width: '50px' }}>follow</div>
-
-    </div >
-  )
-}
+import './App.css'
+import { Compass, Heart, Home, MessageCircleHeart, Search, SquarePlay, SquarePlus } from 'lucide-react'
+import InstagramLogo from './instagram.png'
+import profile from './profile.jpg'
+import SidebarItem from './components/SidebarItem/SidebarItem'
+import StoryCard from './components/StoryCard/StoryCard'
 
 
 
 function App() {
   return (
-    <div className="">
-      <Card />
-      <Card />
-      <Card />
+    <div className="main-container">
+      {/* sidebar */}
+      <div className="sidebar">
+        <div className="logo">
+          <img src={InstagramLogo} alt="" width={150} />
+        </div>
 
+        <SidebarItem icon={<Home />} iconName={"Home"} />
+        <SidebarItem icon={<Search />} iconName={"Search"} />
+        <SidebarItem icon={<Compass />} iconName={"Explore"} />
+        <SidebarItem icon={<SquarePlay />} iconName={"Reels"} />
+        <SidebarItem icon={<MessageCircleHeart />} iconName={"Messages"} />
+        <SidebarItem icon={<Heart />} iconName={"Notification"} />
+        <SidebarItem icon={<SquarePlus />} iconName={"Create"} />
+
+        <div className="sidebar-item">
+          <img src={profile} alt="" width={28} className='profile' />
+          <span>Profile</span>
+        </div>
+
+      </div>
+
+      {/* post section */}
+      <div className="post-section">
+        <div className="story-section">
+
+          <StoryCard name={"Bharat Shinde"} src={"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde"} />
+
+          <StoryCard name={"Rohit Nandagawali"} src={"https://images.unsplash.com/photo-1527980965255-d3b416303d12"} />
+
+          <StoryCard name={"Sanket Satpute"} src={"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde"} />
+
+          <StoryCard name={"Bharat Shinde"} src={"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde"} />
+
+          <StoryCard name={"Rohit Nandagawali"} src={"https://images.unsplash.com/photo-1527980965255-d3b416303d12"} />
+
+          <StoryCard name={"Sanket Satpute"} src={"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde"} />
+
+          <StoryCard name={"Sanket Satpute"} src={"https://images.unsplash.com/photo-1535713875002-d1d0cf377fde"} />
+
+
+
+
+        </div>
+        <div className="all-post"></div>
+      </div>
+
+      {/* suggestion */}
+      <div className="suggestion"></div>
 
     </div>
 

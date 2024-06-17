@@ -1,0 +1,37 @@
+.story-card {
+    width: 5rem;
+    display: flex;
+    /* flex direction */
+    flex-direction: column;
+    align-items: center;
+}
+
+.story-circle {
+    /* gradient border */
+    background: linear-gradient(45deg, yellow, red, blue);
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.story-img {
+    height: 3.4rem;
+    width: 3.4rem;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+
+.story-text {
+    font-size: .8rem;
+    width: 5rem;
+    text-wrap: nowrap;
+    overflow: hidden;
+    /* Clips the overflowing text */
+    text-overflow: ellipsis;
+}

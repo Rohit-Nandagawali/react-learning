@@ -1,0 +1,40 @@
+.suggestion-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.suggestion-profile {
+    border-radius: 50%;
+}
+
+.suggestion-card-text {
+    margin: 0 1rem;
+}
+
+#suggestion-card-bold {
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+#suggestion-card-gray {
+    color: #777777;
+    font-size: .9rem;
+}
+
+.suggestion-left {
+    display: flex;
+}
+
+.suggestion-btn {
+    font-size: .8rem;
+    color: #0095F6;
+}
+
+.suggestion-btn:hover {
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}

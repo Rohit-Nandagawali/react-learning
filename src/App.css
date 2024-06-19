@@ -29,10 +29,7 @@ body {
     height: 50px;
 }
 
-.suggestion {
-    height: 50px;
-    background-color: blue;
-}
+
 
 
 .profile {
@@ -43,4 +40,16 @@ body {
     display: flex;
     gap: .5rem;
     padding: 2rem;
+}
+
+.suggestion {
+    padding: 2rem;
+}
+
+.suggestion-text {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
 }

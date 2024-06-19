@@ -6,6 +6,7 @@ import InstagramLogo from './instagram.png'
 import profile from './profile.jpg'
 import SidebarItem from './components/SidebarItem/SidebarItem'
 import StoryCard from './components/StoryCard/StoryCard'
+import SuggestionCard from './components/SuggestionCard/SuggestionCard'
 
 
 
@@ -55,11 +56,48 @@ function App() {
 
 
         </div>
-        <div className="all-post"></div>
+        <div className="all-post">
+
+        </div>
       </div>
 
       {/* suggestion */}
-      <div className="suggestion"></div>
+      <div className="suggestion">
+
+        <SuggestionCard
+          src={profile}
+          name={"Rohit Nandagawali"}
+          username={"_wh0_am_i"}
+          btnText={"Switch"}
+        />
+
+        <div className="suggestion-text">
+          <p style={{ color: '#a8a8a8', fontWeight: 600 }}>Suggested for you</p>
+          <p>See All</p>
+        </div>
+
+        <SuggestionCard
+          src={"https://images.unsplash.com/photo-1527980965255-d3b416303d12"}
+          name={"Rohit Nandagawali"}
+
+        />
+
+        <SuggestionCard
+          src={"https://images.unsplash.com/photo-1527980965255-d3b416303d12"}
+          name={"Rohit Nandagawali"}
+        />
+
+        <SuggestionCard
+          src={"https://images.unsplash.com/photo-1527980965255-d3b416303d12"}
+          name={"Rohit Nandagawali"}
+        />
+
+        <SuggestionCard
+          src={"https://images.unsplash.com/photo-1527980965255-d3b416303d12"}
+          name={"Rohit Nandagawali"}
+        />
+
+      </div>
 
     </div>
 
